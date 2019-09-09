@@ -85,7 +85,7 @@ with tf.Session(config=config) as sess:
     
             loss_G = 0.
             loss_D = 0.
-            cnt=0
+            
             for step in tqdm(range(nStep_train)):
                 _tar_class_idx, _a,_b,_c,_d, _am, _bm, _cm, _dm, _tar_class_bools, _tar_img = DB_train.getBatch(step*nB,(step+1)*nB)
                 feed_dict = {Colla.is_Training:True, Colla.tar_class_idx:_tar_class_idx,Colla.a_img:_a, Colla.b_img:_b, Colla.c_img:_c, Colla.d_img:_d, Colla.targets:_tar_img,
@@ -134,7 +134,7 @@ with tf.Session(config=config) as sess:
             out_valid = (' %d epoch -- valid loss (G / D) : %.4f /  %.4f' %(iEpoch, vloss_G/nStep_valid, vloss_D/nStep_valid))
             print(out_train)
             print(out_valid)
-    
+            st()
             if iEpoch %1 ==0:
                 path_saved = saver.save(sess, os.path.join(ckpt_dir, "model.ckpt"), global_step=iEpoch)
                 logging.info("Model saved in file: %s" % path_saved)
