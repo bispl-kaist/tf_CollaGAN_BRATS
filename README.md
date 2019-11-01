@@ -32,7 +32,7 @@ Dataset for Multimodal brain tumor segmentation challenge
 BRATS2015 (https://www.smir.ch/BRATS/Start2015)
 
 Dataset for MAGiC dataset:
-You can download the dataset in following URL: https://drive.google.com/open?id=1J46MtkBolLR_pZOOYIwhAZehoPgkQamW
+You can download the dataset in following URL: https://drive.google.com/file/d/11ZFQxU4IXK7KzqOLkkx69duRq1XYHP2V/view?usp=sharing
 The details about the scan is specified in: 
 > Which Contrast Does Matter? Towards a Deep Understanding of MR Contrast using Collaborative GAN,
 > Dongwook Lee, Won-Jin Moon, Jong Chul Ye (arXiv:1905.04105)
