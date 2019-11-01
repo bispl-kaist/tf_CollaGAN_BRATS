@@ -31,13 +31,6 @@ cv2 			  3.4.3
 Dataset for Multimodal brain tumor segmentation challenge
 BRATS2015 (https://www.smir.ch/BRATS/Start2015)
 
-Dataset for MAGiC dataset. The scans were acquired by Konkuk Univ. 
-The details about the scan is specified in  
-> [[Paper]](https://arxiv.org/pdf/1905.04105.pdf)
-You can download the MAGiC dataset in following URL:
-https://drive.google.com/open?id=1-NFakVB6vJCmESE-ubKGt0W4dLAtJhb7
-
-
 ## Main train files
 ```
 train.py
